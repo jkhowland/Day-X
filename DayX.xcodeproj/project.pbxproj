@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C2C4FA8193A67C7008D7CCF /* DXListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C4FA7193A67C7008D7CCF /* DXListTableViewDataSource.m */; };
+		3C2C4FAD193A67E9008D7CCF /* ESEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C4FAA193A67E9008D7CCF /* ESEntryController.m */; };
+		3C2C4FAE193A67E9008D7CCF /* ESEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C4FAC193A67E9008D7CCF /* ESEntry.m */; };
+		3C2C4FB7193A6B62008D7CCF /* DXListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C4FB6193A6B62008D7CCF /* DXListViewController.m */; };
+		3C9BFA4D193ABCAE00BA1E53 /* DXEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BFA4B193ABCAE00BA1E53 /* DXEntryViewController.m */; };
+		3C9BFA4E193ABCAE00BA1E53 /* DXEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C9BFA4C193ABCAE00BA1E53 /* DXEntryViewController.xib */; };
 		711A506A19388095005642EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A506919388095005642EF /* Foundation.framework */; };
 		711A506C19388095005642EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A506B19388095005642EF /* CoreGraphics.framework */; };
 		711A506E19388095005642EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A506D19388095005642EF /* UIKit.framework */; };
@@ -32,6 +38,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C2C4FA6193A67C7008D7CCF /* DXListTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXListTableViewDataSource.h; sourceTree = "<group>"; };
+		3C2C4FA7193A67C7008D7CCF /* DXListTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXListTableViewDataSource.m; sourceTree = "<group>"; };
+		3C2C4FA9193A67E9008D7CCF /* ESEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESEntryController.h; sourceTree = "<group>"; };
+		3C2C4FAA193A67E9008D7CCF /* ESEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESEntryController.m; sourceTree = "<group>"; };
+		3C2C4FAB193A67E9008D7CCF /* ESEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESEntry.h; sourceTree = "<group>"; };
+		3C2C4FAC193A67E9008D7CCF /* ESEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESEntry.m; sourceTree = "<group>"; };
+		3C2C4FB5193A6B62008D7CCF /* DXListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXListViewController.h; sourceTree = "<group>"; };
+		3C2C4FB6193A6B62008D7CCF /* DXListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXListViewController.m; sourceTree = "<group>"; };
+		3C9BFA4A193ABCAE00BA1E53 /* DXEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXEntryViewController.h; sourceTree = "<group>"; };
+		3C9BFA4B193ABCAE00BA1E53 /* DXEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXEntryViewController.m; sourceTree = "<group>"; };
+		3C9BFA4C193ABCAE00BA1E53 /* DXEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DXEntryViewController.xib; sourceTree = "<group>"; };
 		711A506619388095005642EF /* DayX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		711A506919388095005642EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		711A506B19388095005642EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +91,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C9BFA50193ABCD000BA1E53 /* Entry View */ = {
+			isa = PBXGroup;
+			children = (
+				3C9BFA4A193ABCAE00BA1E53 /* DXEntryViewController.h */,
+				3C9BFA4B193ABCAE00BA1E53 /* DXEntryViewController.m */,
+				3C9BFA4C193ABCAE00BA1E53 /* DXEntryViewController.xib */,
+			);
+			name = "Entry View";
+			sourceTree = "<group>";
+		};
+		3C9BFA51193ABCE300BA1E53 /* List View */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C4FB5193A6B62008D7CCF /* DXListViewController.h */,
+				3C2C4FB6193A6B62008D7CCF /* DXListViewController.m */,
+				3C2C4FA6193A67C7008D7CCF /* DXListTableViewDataSource.h */,
+				3C2C4FA7193A67C7008D7CCF /* DXListTableViewDataSource.m */,
+			);
+			name = "List View";
+			sourceTree = "<group>";
+		};
+		3C9BFA52193ABCEB00BA1E53 /* Entry Object */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C4FA9193A67E9008D7CCF /* ESEntryController.h */,
+				3C2C4FAA193A67E9008D7CCF /* ESEntryController.m */,
+				3C2C4FAB193A67E9008D7CCF /* ESEntry.h */,
+				3C2C4FAC193A67E9008D7CCF /* ESEntry.m */,
+			);
+			name = "Entry Object";
+			sourceTree = "<group>";
+		};
 		711A505D19388095005642EF = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +158,9 @@
 			children = (
 				711A507819388095005642EF /* DXAppDelegate.h */,
 				711A507919388095005642EF /* DXAppDelegate.m */,
+				3C9BFA51193ABCE300BA1E53 /* List View */,
+				3C9BFA50193ABCD000BA1E53 /* Entry View */,
+				3C9BFA52193ABCEB00BA1E53 /* Entry Object */,
 				711A507B19388095005642EF /* Images.xcassets */,
 				711A507019388095005642EF /* Supporting Files */,
 			);
@@ -222,6 +274,7 @@
 			files = (
 				711A507419388095005642EF /* InfoPlist.strings in Resources */,
 				711A507C19388095005642EF /* Images.xcassets in Resources */,
+				3C9BFA4E193ABCAE00BA1E53 /* DXEntryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C2C4FB7193A6B62008D7CCF /* DXListViewController.m in Sources */,
+				3C2C4FA8193A67C7008D7CCF /* DXListTableViewDataSource.m in Sources */,
+				3C2C4FAD193A67E9008D7CCF /* ESEntryController.m in Sources */,
+				3C9BFA4D193ABCAE00BA1E53 /* DXEntryViewController.m in Sources */,
 				711A507A19388095005642EF /* DXAppDelegate.m in Sources */,
+				3C2C4FAE193A67E9008D7CCF /* ESEntry.m in Sources */,
 				711A507619388095005642EF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +496,7 @@
 				711A509419388096005642EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		711A509519388096005642EF /* Build configuration list for PBXNativeTarget "DayXTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +505,7 @@
 				711A509719388096005642EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
