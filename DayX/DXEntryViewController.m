@@ -72,8 +72,8 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
-    
-   // [[ESEntryController sharedInstance] addEntry:self.entry];
+
+    [[ESEntryController sharedInstance] synchronize];
     
 }
 

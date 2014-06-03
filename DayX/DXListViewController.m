@@ -68,7 +68,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     
-    [[ESEntryController sharedInstance] synchronize];
+   //[[ESEntryController sharedInstance] synchronize];
     
     [self.tableView reloadData];
 }
@@ -77,6 +77,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+        
+    DXEntryViewController *entryView = [[DXEntryViewController alloc]init];
+    
+    entryView.entry = [ESEntryController sharedInstance].entries[indexPath.row];
+    
+    [self.navigationController pushViewController:entryView animated:YES];
 }
 
 /*
