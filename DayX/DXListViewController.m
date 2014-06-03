@@ -68,7 +68,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     
-   //[[ESEntryController sharedInstance] synchronize];
+   [[ESEntryController sharedInstance] synchronize];
     
     [self.tableView reloadData];
 }
