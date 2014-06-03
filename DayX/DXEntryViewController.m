@@ -8,6 +8,7 @@
 
 #import "DXEntryViewController.h"
 #import "ESEntry.h"
+#import "ESEntryController.h"
 
 @interface DXEntryViewController ()
 
@@ -38,6 +39,16 @@
     // update the entryTextView to the entry of self.entry
 
     self.entryTextView.text = self.entry.entry;
+    
+    // if there's no timestamp, add the current time
+    
+    if (!self.entry.timeStamp){
+        self.entry.timeStamp = [NSDate date];
+    }
+    
+    self.entryTextField.delegate = self;
+    self.entryTextView.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,6 +69,12 @@
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField{
     self.entry.title = textField.text;
     return YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    
+   // [[ESEntryController sharedInstance] addEntry:self.entry];
+    
 }
 
 

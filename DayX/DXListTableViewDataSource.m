@@ -26,6 +26,8 @@
     
     cell.textLabel.text = entry.title;
     
+    cell.detailTextLabel.text = entry.entry;
+    
     return cell;
 }
 
@@ -33,7 +35,8 @@
 {
     //The numberOfRows should return the number of entries in the EntryController sharedInstance
 
-    return [[ESEntryController sharedInstance].entries count];
+    NSInteger rowsInSection = [[ESEntryController sharedInstance].entries count];
+    return rowsInSection;
     
 }
 

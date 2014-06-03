@@ -21,5 +21,7 @@
 
 -(void)loadFromDefaults;
 
+- (void)synchronize;
+
 
 @end

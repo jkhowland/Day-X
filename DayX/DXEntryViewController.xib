@@ -6,7 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DXEntryViewController">
             <connections>
-                <outlet property="entryTextField" destination="WSd-fH-I9G" id="hpc-8N-kKO"/>
+                <outlet property="entryTextField" destination="WSd-fH-I9G" id="0Yl-3e-JLX"/>
+                <outlet property="entryTextView" destination="KCY-3I-nQa" id="wd3-U1-uw3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

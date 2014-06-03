@@ -8,6 +8,7 @@
 
 #import "DXAppDelegate.h"
 #import "DXListViewController.h"
+#import "ESEntryController.h"
 
 @implementation DXAppDelegate
 
@@ -20,6 +21,15 @@
     [self.window setRootViewController:nav];
     
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    ESEntry *entry = [[ESEntry alloc]init];
+    
+    entry.title = @"Test title";
+    entry.timeStamp = [NSDate date];
+    entry.entry = @"Sample entry text";
+    
+    [[ESEntryController sharedInstance]addEntry:entry];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
