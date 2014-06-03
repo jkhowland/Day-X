@@ -49,16 +49,15 @@ static NSString * const entryListKey = @"entryList";
 }
 
 - (void)addEntry:(ESEntry *) entry{
-    NSMutableArray *newArray = [NSMutableArray arrayWithArray:self.entries];
-    [newArray addObject:entry];
-    self.entries = newArray;
-    
+    NSMutableArray *mutableEntries = [NSMutableArray arrayWithArray:self.entries];
+    [mutableEntries addObject:entry]; //adding entry to end of array
+    self.entries = mutableEntries;
 }
 
 - (void)removeEntry:(ESEntry *)entry{
-    NSMutableArray *newArray = [NSMutableArray arrayWithArray:self.entries];
-    [newArray removeObject:entry];
-    self.entries = newArray;
+    NSMutableArray *mutableEntries = [NSMutableArray arrayWithArray:self.entries];
+    [mutableEntries removeObject:entry];
+    self.entries = mutableEntries;
 }
 
 -(void)loadFromDefaults{
