@@ -20,16 +20,16 @@ static NSString * const timeKey = @"timestamp";
     
     NSMutableDictionary *entryDictionary = [[NSMutableDictionary alloc]init];
     
-    if (!self.title) {
+    if (self.title) {
         [entryDictionary setValue:self.title forKeyPath:titleKey];
     }
     
-    if (!self.entry){
+    if (self.entry){
         [entryDictionary setValue:self.entry forKeyPath:entryKey];
 
     }
     
-    if (!self.timeStamp){
+    if (self.timeStamp){
     [entryDictionary setValue:self.timeStamp forKeyPath:timeKey];
     }
     

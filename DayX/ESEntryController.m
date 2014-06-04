@@ -38,7 +38,7 @@ static NSString * const entryListKey = @"entryList";
 }
 
 - (void)synchronize{
-    NSMutableArray *entryDictionaries = [NSMutableArray new];
+    NSMutableArray *entryDictionaries = [[NSMutableArray alloc]init];
     for (ESEntry *entry in self.entries) {
         [entryDictionaries addObject:[entry entryDictionary]];
     }
