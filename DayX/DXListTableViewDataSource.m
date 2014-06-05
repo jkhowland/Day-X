@@ -8,24 +8,27 @@
 
 #import "DXListTableViewDataSource.h"
 #import "ESEntryController.h"
+#import "DXListTableViewCell.h"
 
 @interface DXListTableViewDataSource ()
 
-@property (nonatomic, strong) UITableView *tableView;
-
 @end
-
 
 @implementation DXListTableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:entryListCellIdentifier forIndexPath:indexPath];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:entryListCellIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:entryListCellIdentifier];
+    }
     
     ESEntry *entry = [ESEntryController sharedInstance].entries[indexPath.row];
     
     cell.textLabel.text = entry.title;
     
+    cell.detailTextLabel.text = [entry.entry substringToIndex:MIN(30, [entry.entry length] -1)];
     cell.detailTextLabel.text = entry.entry;
     
     return cell;
@@ -39,11 +42,5 @@
     return rowsInSection;
     
 }
-
-- (void)registerTableView:(UITableView *)tableView {
-    self.tableView = tableView;
-    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:entryListCellIdentifier];
-}
-
 
 @end

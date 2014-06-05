@@ -12,6 +12,4 @@ static NSString *entryListCellIdentifier = @"entryList";
 
 @interface DXListTableViewDataSource : NSObject <UITableViewDataSource>
 
-- (void)registerTableView:(UITableView *)tableView;
-
 @end

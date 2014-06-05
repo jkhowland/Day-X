@@ -39,7 +39,6 @@
     
     self.dataSource = [DXListTableViewDataSource new];
     
-    [self.dataSource registerTableView:self.tableView];
     self.tableView.dataSource = self.dataSource;
     self.tableView.delegate = self;
     
